@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Thu Nov 06 11:29:39 EST 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-0149-85f0-9b4f-00000302fef0 
+on database directory memory:Z:\trash\HiveUnitExample\metastore_db  with class loader sun.misc.Launcher$AppClassLoader@1e4ad14c 
+Loaded from file:/C:/Users/prungta/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.7.0_71-b14
+user.dir=Z:\trash\HiveUnitExample
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

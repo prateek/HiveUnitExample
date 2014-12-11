@@ -1,0 +1,46 @@
+<configuration>	
+	<property>
+        <name>hive.querylog.location</name>
+        <value>C:\tmp\hive-${user.name}</value>
+    </property>
+	<property>
+        <name>fs.file.impl</name>
+        <value>com.conga.services.hadoop.patch.HADOOP_7682.WinLocalFileSystem</value>
+    </property>
+    <property>
+        <name>hadoop.tmp.dir</name>
+        <value>C:\tmp\hive-${user.name}</value>
+    </property>
+    <property>
+        <name>hive.exec.scratchdir</name>
+        <value>C:\tmp\hive-scratch</value>
+    </property>
+    
+    <property>
+        <name>hive.exec.mode.local.auto</name>
+        <value>true</value>
+        <description>Let hive determine whether to run in local mode automatically</description>
+    </property>
+
+    <property>
+        <name>hive.mapred.local.mem</name>
+        <value>0</value>
+    </property>
+
+    <property>
+        <name>javax.jdo.option.ConnectionURL</name>
+        <value>jdbc:derby:memory:metastore_db;create=true</value>
+        <description>JDBC connect string for a JDBC metastore</description>
+    </property>
+
+    <!--
+        This property is no longer required for executing
+        an embedded Hive instance if the EmbeddedHive class
+        is used. We recommend using EmbeddedHive.
+    -->
+    <property>
+        <name>hive.metastore.warehouse.dir</name>
+        <value>C:\tmp\hive-warehouse</value>
+        <description>location of default database for the warehouse</description>
+    </property>
+</configuration>
